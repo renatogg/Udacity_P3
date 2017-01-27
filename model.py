@@ -3,6 +3,8 @@ from keras.layers.core import Flatten, Dense, Dropout
 from keras.layers.normalization import BatchNormalization
 from keras.layers.convolutional import Convolution2D, MaxPooling2D, ZeroPadding2D
 from keras.optimizers import SGD
+from keras.layers import Input
+from keras.models import Sequential, Model
 import cv2, numpy as np
 from TrainingData import *
 from sklearn.utils import shuffle
@@ -17,14 +19,18 @@ steering = 3
 angleTS = 0.25
 
 def vgg(inputshape):
-    
+    #Creates tensor to receive input with desired shape
     input_layer = Input(shape=inputshape)
+    #Creates VGG16 base model with weights from imagenet. 
     base_model = VGG16(weights='imagenet', include_top=False, input_tensor=input_layer)
+    #Extend base model to include two fully connected with dropout and a final 1 neuron layer for the steering.
     layer = base_model.output
     layer = Flatten()(layer) 
     layer = Dense(1024, activation='relu', name='fc')(layer)
     layer = Dropout(0.5)(layer)
+    #The idea for this two neurons layers is that it gives a linear combination on how much to steer left, and how much to steer right.
     layer = Dense(2, activation='linear', name='fc2')(layer)    
+    #Final layer, this is the steering output.
     layer = Dense(1, activation='linear', name='predictions')(layer)
 
     model = Model(input=base_model.input, output=layer)
@@ -33,6 +39,7 @@ def vgg(inputshape):
 ## Load data from CSV file
 def loadcsv(name,discard_zero):
     csvfile = open(name, 'rt')
+    #Load all lines from csv file and closes it
     lines = csvfile.readlines()    
     csvfile.close()
     X = []
@@ -57,8 +64,9 @@ def loadcsv(name,discard_zero):
         X.append(rimg)
         # Augmentation to use right image - sum an steering threshold
         y.append(steer + angleTS)
-
+    #Shuffle the data before splitting
     X_train, y_train = shuffle(X, y)
+    #Return data with 20% split for training
     return train_test_split(X_train, y_train,test_size=0.20)
 
 
@@ -79,6 +87,6 @@ for i in range(len(files)):
     
 with open('model.json', 'w') as f:
     f.write(model.to_json())
-#model.save_weights('model.h5')
+model.save_weights('model.h5')
 
     
