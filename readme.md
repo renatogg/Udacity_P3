@@ -34,7 +34,6 @@ generated.
 |-----|--------|------|
 |![Left 1](/dataset_samples/l_1.jpg)|![Center 1](/dataset_samples/c_1.jpg)|![Right 1](/dataset_samples/r_1.jpg)|
 |![Left 2](/dataset_samples/l_2.jpg)|![Center 2](/dataset_samples/c_2.jpg)|![Right 2](/dataset_samples/r_2.jpg)|
-|-----|--------|------|
 
 ###Image Preprocessing
 Besides cropping and resizing the images, before feeding in the neural network,
@@ -58,7 +57,8 @@ The Final DNN is defined as in the Model:
 ![DNN Model](model.png)
 In detail, the network is:
 
-|input                       |
+|Input                       |
+|----------------------------|
 |Conv 3x3x64 activation Relu |
 |Conv 3x3x64 activation Relu |
 |Max Pooling 2x2             |
@@ -88,6 +88,7 @@ In detail, the network is:
 |Dense (2)  activation linear|
 |Dense (1)  activation linear|
 |----------------------------|
+
 
 ##Training
 
