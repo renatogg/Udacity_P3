@@ -1,12 +1,12 @@
 - [Behavior Cloning Project](#)
-	- [Model Architecture](#)
-		- [Architecture Characteristics](#)
-	- [Dataset generation](#)
-		- [Dataset images example](#)
-		- [Image Preprocessing](#)
-	- [Training](#)
-	- [Simulation](#)
-		- [Simulation instructions](#)
+	- [Model Architecture](#Model-Architecture)
+		- [Architecture Characteristics](#Architecture-Characteristics)
+	- [Dataset generation](#Dataset-generation)
+		- [Dataset images example](#Dataset-images-example)
+		- [Image Preprocessing](#Image-Preprocessing)
+	- [Training](#Training)
+	- [Simulation](#Simulation)
+		- [Simulation instructions](#Simulation-instructions)
 
 
 #Behavior Cloning Project
