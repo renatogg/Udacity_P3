@@ -1,12 +1,12 @@
 - [Behavior Cloning Project](#)
-	- [Model Architecture](https://github.com/renatogg/Udacity_P3#Model-Architecture)
-		- [Architecture Characteristics](https://github.com/renatogg/Udacity_P3#Architecture-Characteristics)
-	- [Dataset generation](https://github.com/renatogg/Udacity_P3#Dataset-generation)
-		- [Dataset images example](https://github.com/renatogg/Udacity_P3#Dataset-images-example)
-		- [Image Preprocessing](https://github.com/renatogg/Udacity_P3#Image-Preprocessing)
-	- [Training](https://github.com/renatogg/Udacity_P3#Training)
-	- [Simulation](https://github.com/renatogg/Udacity_P3#Simulation)
-		- [Simulation instructions](https://github.com/renatogg/Udacity_P3#Simulation-instructions)
+	- [Model Architecture](#Model-Architecture)
+		- [Architecture Characteristics](#Architecture-Characteristics)
+	- [Dataset generation](#Dataset-generation)
+		- [Dataset images example](#Dataset-images-example)
+		- [Image Preprocessing](#Image-Preprocessing)
+	- [Training](#Training)
+	- [Simulation](#Simulation)
+		- [Simulation instructions](#Simulation-instructions)
 
 
 #Behavior Cloning Project
