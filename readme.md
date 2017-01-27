@@ -1,12 +1,12 @@
 - [Behavior Cloning Project](#)
-	- [Model Architecture](#Model-Architecture)
-		- [Architecture Characteristics](#Architecture-Characteristics)
-	- [Dataset generation](#Dataset-generation)
-		- [Dataset images example](#Dataset-images-example)
-		- [Image Preprocessing](#Image-Preprocessing)
-	- [Training](#Training)
-	- [Simulation](#Simulation)
-		- [Simulation instructions](#Simulation-instructions)
+	- [Model Architecture](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Model-Architecture)
+		- [Architecture Characteristics](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Architecture-Characteristics)
+	- [Dataset generation](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Dataset-generation)
+		- [Dataset images example](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Dataset-images-example)
+		- [Image Preprocessing](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Image-Preprocessing)
+	- [Training](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Training)
+	- [Simulation](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Simulation)
+		- [Simulation instructions](https://github.com/renatogg/Udacity_P3/edit/master/readme.md#Simulation-instructions)
 
 
 #Behavior Cloning Project
@@ -139,4 +139,4 @@ The car desired speed can be controlled with the following pattern:
 * __*spacebar*__: kill throttle
 
 At any time, the command can be cancelled by pressing any other key.
-**Remark**: In order for this commands to work, the terminal where drive.py is executed must be on focus.
+**Remark**: In order for these commands to work, the terminal where drive.py is executed must be on focus.
