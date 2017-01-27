@@ -45,13 +45,11 @@ The deep neural network is defined based on VGG16. The great advantage of using
 VGG16 is that there are plenty pre-computed weights for its convolutional layers,
 available even directly from Keras:
 
-'''python
   from keras.applications.vgg16 import VGG16
   input_layer = Input(shape=inputshape)
   base_model = VGG16(weights='imagenet', include_top=False, input_tensor=input_layer)
   layer = base_model.output
   ...
-'''
 
 In the code example, the weights from imagenet are loaded into the model.
 
